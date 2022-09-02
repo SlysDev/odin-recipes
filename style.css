@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -14,11 +14,26 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    margin: 2rem;
+}
+h2 {
+    margin: 1rem;
+}
+
 .centered-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+}
+
+.split-container {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -28,20 +43,28 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     bottom: 0;
-    margin: 1rem;
 }
 
 footer p {
     text-align: center;
 }
 
-ul li {
-    margin: 2rem;
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 }
 
+ul li {
+    margin: 1rem;
+    transition: 0.5s ease;
+}
+
+ul li:hover {
+    margin: 2.2rem;
+    font-size: larger;
+    transition: 0.5s ease;
+}
 .return-to-main {
     margin: 1rem;
 }
-
-
-
